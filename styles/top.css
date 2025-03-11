@@ -1,0 +1,32 @@
+.top {
+    min-height: 823px;
+}
+
+.top__title {
+    font-weight: 900;
+    font-size: 150px;
+    letter-spacing: -0.1em;
+    z-index: 0;
+}
+
+.top__sub {
+    padding-left: 100px;
+}
+
+.top__container {
+    position: relative;
+    min-height: 823px;
+}
+
+.top__container::before {
+    position: absolute;
+    z-index: 1;
+    background-image: url("../assets/images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 675px;
+    height: 762px;
+    content: '';
+    bottom: 0;
+    right: 30px;
+}

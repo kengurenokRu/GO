@@ -1,0 +1,51 @@
+.review__foto {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.review__block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.review__text {
+    max-width: 670px;
+}
+
+.review__people {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.review__item {
+    position: relative;
+}
+
+.review__text {
+    position: absolute;
+    top: 80px;
+}
+
+.review__item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.review__list {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.review__foto1_position {
+    object-position: center 0;
+}
+
+.review__foto2_position {
+    object-position: center -50px;
+}
+
+.review__foto3_position {
+    object-position: center -80px;
+}
