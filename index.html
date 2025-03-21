@@ -44,68 +44,22 @@
         <p class="top__sub">Новый формат игр и отдыха</p>
       </div>
     </section>
-
-    <!-- <section class="section we-have">
-      <div class="container">
-        <h2 class="subtitle">У нас есть все для классного отдыха с друзьями!</h2>
-        <ul class="we-have__list">
-          <li class="we-have__item">
-            <figure>
-              <img src="./assets/images/vr.jpg" alt="VR очки">
-              <figcaption class="we-have__caption">VR очки</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure>
-              <img src="./assets/images/audio.jpg" alt="Аудио-система">
-              <figcaption class="we-have__caption">Аудио-систеа 5.1 с оличным звуком</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure>
-              <img src="./assets/images/micro.jpg" alt="Микрофоны для караоке">
-              <figcaption class="we-have__caption">Караоке (4 микрофона)</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure>
-              <img src="./assets/images/game.jpg" alt="Настольные игры">
-              <figcaption class="we-have__caption">Настольные игры</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure>
-              <img src="./assets/images/netflix.jpg" alt="Стриминговый сервис фильмов и сериалов Netflix">
-              <figcaption class="we-have__caption">Кино срвисы Netflix, IVI, MegaGo, КиноПоиск, Okko</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure>
-              <img src="./assets/images/sony.jpg" alt="Приставка Sony">
-              <figcaption class="we-have__caption">PlayStation 5</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
-    </section>-->
-
     <section class="section we-have">
       <div class="container">
         <h2 class="subtitle we-have__subtitle">У нас есть все для классного
-отдыха с друзьями!</h2>
+          отдыха с друзьями!</h2>
         <ul class="we-have__list">
           <li class="we-have__item we-have__item_VR">VR очки</li>
           <li class="we-have__item we-have__item_audio">Аудио-систеа 5.1
-с оличным звуком</li>
+            с оличным звуком</li>
           <li class="we-have__item we-have__item_sound">Караоке (4 микрофона)</li>
           <li class="we-have__item we-have__item_table-game">Настольные игры</li>
           <li class="we-have__item we-have__item_films">Кино срвисы Netflix, IVI,
-MegaGo, КиноПоиск, Okko</li>
+            MegaGo, КиноПоиск, Okko</li>
           <li class="we-have__item we-have__item_game">PlayStation 5 </li>
         </ul>
       </div>
     </section>
-
     <section class="section halls" id="halls">
       <div class="container">
         <h2 class="subtitle halls__subtitle">Наши залы</h2>
@@ -126,98 +80,116 @@ MegaGo, КиноПоиск, Okko</li>
       </div>
     </section>
     <section class="section reservation" id="reservation">
-      <div class="container">
+      <div class="container reservation__container">
         <h2 class="subtitle reservation__subtitle">Забронировать зал просто</h2>
         <form class="reservation__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-          <fieldset>
-            <legend>Выбери зал</legend>
+          <fieldset class="reservation__select reservation__select-hall">
+            <legend class="reservation__caption">Выбери зал</legend>
 
-            <input class="reservation__hall" type="radio" name="hall" id="hall1" value="80s-vibes">
+            <input class="reservation__hall visually-hidden" type="radio" name="hall" id="hall1" value="80s-vibes">
             <label class="reservation__hall-name" for="hall1">80's vibes</label>
 
-            <input class="reservation__hall" type="radio" name="hall" id="hall2" value="Star-wars">
+            <input class="reservation__hall visually-hidden" type="radio" name="hall" id="hall2" value="Star-wars">
             <label class="reservation__hall-name" for="hall2">Star wars</label>
 
-            <input class="reservation__hall" type="radio" name="hall" id="hall3" value="Wild-west">
+            <input class="reservation__hall visually-hidden" type="radio" name="hall" id="hall3" value="Wild-west">
             <label class="reservation__hall-name" for="hall3">Wild west</label>
 
-            <input class="reservation__hall" type="radio" name="hall" id="hall4" value="Neon-style">
+            <input class="reservation__hall visually-hidden" type="radio" name="hall" id="hall4" value="Neon-style">
             <label class="reservation__hall-name" for="hall4">Neon style</label>
           </fieldset>
-          <fieldset>
-            <legend>Собери набор развлечений</legend>
-            <fieldset>
-              <legend>Приставка:</legend>
-              <input class="reservation__game" type="radio" name="game" id="game1" value="PlayStation">
-              <label class="reservation__game-name" for="game1">PlayStation</label>
+          <fieldset class="reservation__select reservation__select-game">
+            <legend class="reservation__caption">Собери набор развлечений</legend>
+            <fieldset class="reservation__check">
+              <legend class="reservation__select-game-caption">Приставка:</legend>
+              <label class="reservation__check-label" for="game1">
+                <input class="reservation__check-unput" type="radio" name="game" id="game1" value="PlayStation">
+                PlayStation
+              </label>
 
-              <input class="reservation__game" type="radio" name="game" id="game2" value="Sega-Mega-Drive">
-              <label class="reservation__game-name" for="game2">Sega Mega Drive</label>
+              <label class="reservation__check-label" for="game2">
+                <input class="reservation__check-unput" type="radio" name="game" id="game2" value="Sega-Mega-Drive">
+                Sega Mega Drive
+              </label>
 
-              <input class="reservation__game" type="radio" name="game" id="game3" value="X-box-One-S">
-              <label class="reservation__game-name" for="game3">X-box One S</label>
+              <label class="reservation__check-label" for="game3">
+                <input class="reservation__check-unput" type="radio" name="game" id="game3" value="X-box-One-S">
+                X-box One S
+              </label>
 
-              <input class="reservation__game" type="radio" name="game" id="game4" value="Dendy">
-              <label class="reservation__game-name" for="game4">Dendy</label>
+              <label class="reservation__check-label" for="game4">
+                <input class="reservation__check-unput" type="radio" name="game" id="game4" value="Dendy">
+                Dendy
+              </label>
             </fieldset>
-            <fieldset>
-              <legend>Настольные игры:</legend>
-              <input class="reservation__tablegame" type="checkbox" name="tablegame" id="tablegame1" value="Jenga">
-              <label class="reservation__tablegame-name" for="tablegame1">Jenga</label>
+            <fieldset class="reservation__check">
+              <legend class="reservation__select-game-caption">Настольные игры:</legend>
+              <label class="reservation__check-label" for="tablegame1">
+                <input class="reservation__check-unput" type="checkbox" name="tablegame" id="tablegame1" value="Jenga">
+                Jenga
+              </label>
 
-              <input class="reservation__tablegame" type="checkbox" name="tablegame" id="tablegame2" value="Monopoly">
-              <label class="reservation__tablegame-name" for="tablegame2">Monopoly</label>
+              <label class="reservation__check-label" for="tablegame2">
+                <input class="reservation__check-unput" type="checkbox" name="tablegame" id="tablegame2"
+                  value="Monopoly">
+                Monopoly
+              </label>
 
-              <input class="reservation__tablegame" type="checkbox" name="tablegame" id="tablegame3" value="Манчикин">
-              <label class="reservation__tablegame-name" for="tablegame3">Манчикин</label>
+              <label class="reservation__check-label" for="tablegame3">
+                <input class="reservation__check-unput" type="checkbox" name="tablegame" id="tablegame3"
+                  value="Манчикин">
+                Манчикин
+              </label>
 
-              <input class="reservation__tablegame" type="checkbox" name="tablegame" id="tablegame4" value="Alias">
-              <label class="reservation__tablegame-name" for="tablegame4">Alias</label>
+              <label class="reservation__check-label" for="tablegame4">
+                <input class="reservation__check-unput" type="checkbox" name="tablegame" id="tablegame4" value="Alias">
+                Alias
+              </label>
             </fieldset>
-            <fieldset>
-              <legend>Дополнительно:</legend>
-              <input class="reservation__extra" type="checkbox" name="extra" id="extra1" value="Karaoke">
-              <label class="reservation__extra-name" for="extra1">Караоке</label>
+            <fieldset class="reservation__check">
+              <legend class="reservation__select-game-caption">Дополнительно:</legend>
+              <label class="reservation__check-label" for="extra1">
+                <input class="reservation__check-unput" type="checkbox" name="extra" id="extra1" value="Karaoke">
+                Караоке
+              </label>
 
-              <input class="reservation__extra" type="checkbox" name="extra" id="extra2" value="VR">
-              <label class="reservation__extra-name" for="extra2">VR</label>
+              <label class="reservation__check-label" for="extra2">
+                <input class="reservation__check-unput" type="checkbox" name="extra" id="extra2" value="VR">
+                VR
+              </label>
             </fieldset>
           </fieldset>
-          <fieldset>
-            <legend>Выбери дату и время</legend>
+          <fieldset class="reservation__select reservation__select-data">
+            <legend class="reservation__caption">Выбери дату и время</legend>
+            <div class="reservation__block-date">
+              <input class="reservation__date" type="date" id="date" name="date" required>
 
-            <label class="reservation__reg-data-label" for="date">Дата*</label>
-            <input class="reservation__date" type="date" id="date" name="date" required>
+              <input class="reservation__time" type="time" id="time" name="time" required>
 
-            <label class="reservation__reg-data-label" for="time">Время*</label>
-            <input class="reservation__time" type="time" id="time" name="time" required>
+              <input class="reservation__number" type="number" id="number" name="number" min="1" max="20" required>
+            </div>
+            <div class="reservation__block-date">
+              <label class="reservation__data-label" for="name-reserve">Имя
+                <input class="reservation__data-input" type="text" id="name-reserve" name="name-reserve" required>
+              </label>
 
-            <label class="reservation__reg-data-label" for="number">Сколько человек*</label>
-            <input class="reservation__number" type="number" id="number" name="number" min="1" max="20" required>
+              <label class="reservation__data-label" for="surname-reserve">Фамилия
+                <input class="reservation__data-input" type="text" id="surname-reserve" name="surname-reserve"
+                  required>
+              </label>
+            </div>
 
-            <label class="reservation__reg-data-label" for="name-reserve">Имя*</label>
-            <input class="reservation__name-reserve" type="text" id="name-reserve" name="name-reserve" required>
+            <address class="reservation__block-date">
+              <label class="reservation__data-label" for="pnone-reserve">Телефон
+                <input class="reservation__data-input" type="tel" id="pnone-reserve" name="phone-reserve" required>
+              </label>
 
-            <label class="reservation__reg-data-label" for="surname-reserve">Фамилия*</label>
-            <input class="reservation__surname-reserve" type="text" id="surname-reserve" name="surname-reserve"
-              required>
-
-            <address>
-              <label class="reservation__reg-data-label" for="pnone-reserve">Номер телефона*</label>
-              <input class="reservation__phone-reserve" type="tel" id="pnone-reserve" name="phone-reserve" required>
-
-              <label class="reservation__reg-data-label" for="email">E-mail</label>
-              <input class="reservation__email" type="email" id="email" name="email" required>
+              <label class="reservation__data-label" for="email">E-mail
+                <input class="reservation__data-input" type="email" id="email" name="email" required>
+              </label>
             </address>
-
-            <input class="reservation__age-reserve" type="checkbox" id="age-reserve">
-            <label class="reservation__reg-data-label" for="age-reserve">Я старше 18 лет</label>
           </fieldset>
           <input class="reservation__button" type="submit" value="Забронировать">
-
-          <input class="reservation__agree-reserve" type="checkbox" name="agree-reserve" id="agree-reserve"
-            value="agree-reserve" required>
-          <label class="reservation__reg-data-label" for="agree-reserve">Согласен на обработку данных</label>
         </form>
       </div>
     </section>
