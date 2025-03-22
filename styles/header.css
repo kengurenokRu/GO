@@ -1,4 +1,32 @@
-.header {
-    padding-top: 145px;
-    padding-bottom: 50px;
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;    
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.header__logo-text {
+    fill: #fff;
+}
+
+.header__logo-border {
+    fill: #cd06ff;
+}
+
+.header__button{
+    padding: 15px 32px;
+    font-size: 22px;    
+    text-transform: uppercase;
+    color: #fff;
+    border:3px solid #cd06ff;
+    border-radius: 10px;
+    max-width: 280px;
+    max-height: 55px;
+}
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
