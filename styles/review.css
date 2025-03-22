@@ -33,14 +33,14 @@
     margin: 0 auto;
 }
 
-.review__foto1_position {
+.review__foto_position-one {
     object-position: center 0;
 }
 
-.review__foto2_position {
+.review__foto_position-two {
     object-position: center -50px;
 }
 
-.review__foto3_position {
+.review__foto_position-three {
     object-position: center -80px;
 }

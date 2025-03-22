@@ -46,20 +46,20 @@
           <div class="top__text-block">
             <p class="top__text top__text_purple top__text_big">4</p>
             <p class="top__text">Тематических
-зала</p>
+              зала</p>
           </div>
           <div class="top__text-block">
             <p class="top__text top__text_purple top__text_small">new</p>
             <p class="top__text">Новейшая
-аппаратура</p>
+              аппаратура</p>
           </div>
         </div>
         <button class="top__button">Забронировать</button>
         <svg class="top__arrow" width="97" height="97" viewBox="0 0 97 97" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="48.5" cy="48.5" r="48"/>
-          <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)"/>
-          <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)"/>
-          </svg>          
+          <circle cx="48.5" cy="48.5" r="48" />
+          <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" />
+          <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" />
+        </svg>
       </div>
     </section>
     <section class="section we-have">
@@ -180,15 +180,14 @@
           <fieldset class="reservation__select reservation__select-data">
             <legend class="reservation__caption">Выбери дату и время</legend>
             <div class="reservation__block-date">
-
-              <input class="reservation__date-time" type="date" id="date" name="date" required>
-
-              <input class="reservation__date-time" type="time" id="time" name="time" required>
-
+              <div class="reservation__date-time-block">
+                <input class="reservation__date-time" type="date" id="date" name="date" required>
+                <input class="reservation__date-time" type="time" id="time" name="time" required>
+              </div>
               <input class="reservation__number" type="number" id="number" name="number" min="1" max="20" required
                 placeholder="Количество человек">
             </div>
-            <div class="reservation__block-date">
+            <div class="reservation__block-personal-data">
               <label class="reservation__data-label reservation__data-label_block" for="name-reserve">Имя
                 <input class="reservation__data-input reservation__data-input_block" type="text" id="name-reserve"
                   name="name-reserve" required>
@@ -199,14 +198,14 @@
                   name="surname-reserve" required>
               </label>
             </div>
-            <address class="reservation__block-date">
+            <address class="reservation__block-personal-data">
               <label class="reservation__data-label reservation__data-label_block" for="pnone-reserve">Телефон
-                <input class="reservation__adress-input reservation__data-input_block" type="tel" id="pnone-reserve"
+                <input class="reservation__adress-input reservation__adress-input_block" type="tel" id="pnone-reserve"
                   name="phone-reserve" required>
               </label>
 
               <label class="reservation__data-label reservation__data-label_block" for="email">E-mail
-                <input class="reservation__adress-input reservation__data-input_block" type="email" id="email"
+                <input class="reservation__adress-input reservation__adress-input_block" type="email" id="email"
                   name="email" required>
               </label>
             </address>
@@ -248,7 +247,7 @@
       <ul class="review__list">
         <li class="review__item">
           <figure class="review__people review__block">
-            <img class="review__foto review__foto1_position" src="./assets/images/samojlov.jfif"
+            <img class="review__foto review__foto_position-one" src="./assets/images/samojlov.jfif"
               alt="Фото Макса Самойлова">
             <figcaption>Макс Самойлов</figcaption>
           </figure>
@@ -260,7 +259,7 @@
         </li>
         <li class="review__item">
           <figure class="review__people review__block">
-            <img class="review__foto review__foto2_position" src="./assets/images/grigoreva.jfif"
+            <img class="review__foto review__foto_position-two" src="./assets/images/grigoreva.jfif"
               alt="Фото Оксаны Григорьевой">
             <figcaption>Оксана Григорьева</figcaption>
           </figure>
@@ -271,7 +270,7 @@
         </li>
         <li class="review__item">
           <figure class="review__people review__block">
-            <img class="review__foto review__foto3_position" src="./assets/images/jaschenko.jfif"
+            <img class="review__foto review__foto_position-three" src="./assets/images/jaschenko.jfif"
               alt="Фото Никиты Ященко">
             <figcaption>Никита Ященко</figcaption>
           </figure>

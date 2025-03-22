@@ -38,8 +38,8 @@
 
 .reservation__select-data {
     display: flex;
-    justify-content: center;    
-    gap: 50px;    
+    justify-content: center;
+    gap: 50px;
 }
 
 .reservation__caption {
@@ -88,13 +88,24 @@
 
 .reservation__block-date {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 36px; 
+    align-self: flex-end;   
+}
+.reservation__date-time-block{
+    display: flex;
+    gap:32px;
+}
+
+.reservation__block-personal-data{
+    display: flex;
+    flex-direction: column;
     gap: 14px;
-    align-items: flex-end;
 }
 
 .reservation__data-label_block,
-.reservation__data-input_block {
+.reservation__data-input_block,
+.reservation__adress-input_block {
     display: block;
 }
 
@@ -129,4 +140,8 @@
     font-size: 28px;
     font-weight: 700;
     align-self: flex-end;
+}
+
+.reservation__select_block {
+    display: inline-block;
 }
