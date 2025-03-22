@@ -162,30 +162,30 @@
           <fieldset class="reservation__select reservation__select-data">
             <legend class="reservation__caption">Выбери дату и время</legend>
             <div class="reservation__block-date">
-              <input class="reservation__date" type="date" id="date" name="date" required>
 
-              <input class="reservation__time" type="time" id="time" name="time" required>
+              <input class="reservation__date-time" type="date" id="date" name="date" required>
 
-              <input class="reservation__number" type="number" id="number" name="number" min="1" max="20" required>
+              <input class="reservation__date-time" type="time" id="time" name="time" required>
+
+              <input class="reservation__number" type="number" id="number" name="number" min="1" max="20" required
+                placeholder="Количество человек">
             </div>
             <div class="reservation__block-date">
-              <label class="reservation__data-label" for="name-reserve">Имя
-                <input class="reservation__data-input" type="text" id="name-reserve" name="name-reserve" required>
+              <label class="reservation__data-label reservation__data-label_block" for="name-reserve">Имя
+                <input class="reservation__data-input reservation__data-input_block" type="text" id="name-reserve" name="name-reserve" required>
               </label>
 
-              <label class="reservation__data-label" for="surname-reserve">Фамилия
-                <input class="reservation__data-input" type="text" id="surname-reserve" name="surname-reserve"
-                  required>
+              <label class="reservation__data-label reservation__data-label_block" for="surname-reserve">Фамилия
+                <input class="reservation__data-input reservation__data-input_block" type="text" id="surname-reserve" name="surname-reserve" required>
               </label>
             </div>
-
             <address class="reservation__block-date">
-              <label class="reservation__data-label" for="pnone-reserve">Телефон
-                <input class="reservation__data-input" type="tel" id="pnone-reserve" name="phone-reserve" required>
+              <label class="reservation__data-label reservation__data-label_block" for="pnone-reserve">Телефон
+                <input class="reservation__adress-input reservation__data-input_block" type="tel" id="pnone-reserve" name="phone-reserve" required>
               </label>
 
-              <label class="reservation__data-label" for="email">E-mail
-                <input class="reservation__data-input" type="email" id="email" name="email" required>
+              <label class="reservation__data-label reservation__data-label_block" for="email">E-mail
+                <input class="reservation__adress-input reservation__data-input_block" type="email" id="email" name="email" required>
               </label>
             </address>
           </fieldset>
