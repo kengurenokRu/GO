@@ -1,5 +1,11 @@
 .footer {
-    padding: 50px 0;
+    padding: 50px 0;    
+}
+
+.footer__container{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 .footer__contact-list {
@@ -68,3 +74,13 @@
 .footer__social:hover {
     color: #6c0287;
 }
+
+.footer__map{
+    max-width: 680px;
+}
+
+.footer__block{
+    max-height: 280px;
+    overflow: hidden;
+}
+
