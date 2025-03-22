@@ -2,7 +2,7 @@
     padding: 50px 0;    
 }
 
-.footer__container{
+.footer__block-container{
     display: flex;
     justify-content: center;
     gap: 60px;
