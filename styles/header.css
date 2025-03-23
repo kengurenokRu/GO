@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 22px;    
+    font-size: 22px;
     text-transform: uppercase;
     padding-top: 30px;
 }
@@ -15,18 +15,37 @@
     fill: #cd06ff;
 }
 
-.header__button{
+.header__button {
     padding: 15px 32px;
-    font-size: 22px;    
+    font-size: 22px;
     text-transform: uppercase;
     color: #fff;
-    border:3px solid #cd06ff;
+    border: 3px solid #cd06ff;
     border-radius: 10px;
     max-width: 280px;
     max-height: 55px;
 }
-.header__menu{
+
+.header__menu {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+}
+
+.header__button:hover {
+    color: #fff;
+    background-color: #6c0287;
+    border: 3px solid #6c0287;
+}
+
+.header__button:active {
+    color: #fff;
+    background-color: #640aa3;
+    border: 1px solid #fff;
+}
+
+.header__button:focus {
+    color: #fff;
+    background-color: #6c0287;
+    border: 3px solid #6c0287;
 }

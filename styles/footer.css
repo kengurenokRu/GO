@@ -1,8 +1,8 @@
 .footer {
-    padding: 50px 0;    
+    padding: 50px 0;
 }
 
-.footer__block-container{
+.footer__block-container {
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -71,16 +71,30 @@
     margin-right: 0;
 }
 
-.footer__social:hover {
-    color: #6c0287;
-}
-
-.footer__map{
+.footer__map {
     max-width: 680px;
 }
 
-.footer__block{
+.footer__block {
     max-height: 280px;
     overflow: hidden;
 }
 
+.footer__social{
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    color: #fff;
+}
+
+.footer__social:hover {
+    color: #eadeed;
+}
+
+.footer__social:active {
+    color: #cd06ff;
+}
+
+.footer__social:focus {
+    color: #eadeed;
+    outline: 1px solid #cd06ff;
+}

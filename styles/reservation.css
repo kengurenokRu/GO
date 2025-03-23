@@ -1,5 +1,8 @@
-.reservation__container {
+.reservation {
     background-color: #440f51;
+}
+
+.reservation__container {
     padding: 80px 0;
 }
 
@@ -51,7 +54,9 @@
 }
 
 .reservation__hall-name {
+    cursor: pointer;
     background-color: #fff;
+    border: 3px solid #fff;
     color: #000;
     font-size: 30px;
     font-weight: 700;
@@ -61,7 +66,6 @@
     padding: 7px 15px 8px 15px;
     border-radius: 8px;
 }
-
 
 .reservation__check {
     display: flex;
@@ -89,15 +93,16 @@
 .reservation__block-date {
     display: flex;
     flex-direction: column;
-    gap: 36px; 
-    align-self: flex-end;   
-}
-.reservation__date-time-block{
-    display: flex;
-    gap:32px;
+    gap: 36px;
+    align-self: flex-end;
 }
 
-.reservation__block-personal-data{
+.reservation__date-time-block {
+    display: flex;
+    gap: 32px;
+}
+
+.reservation__block-personal-data {
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -129,6 +134,20 @@
     min-width: 300px;
 }
 
+.reservation__date-time,
+.reservation__number,
+.reservation__data-input,
+.reservation__adress-input {
+    padding-left: 10px;
+}
+
+.reservation__select-button {
+    min-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .reservation__button {
     color: #440f51;
     background-color: #fff;
@@ -139,9 +158,52 @@
     text-align: center;
     font-size: 28px;
     font-weight: 700;
-    align-self: flex-end;
 }
 
 .reservation__select_block {
     display: inline-block;
+}
+
+.reservation__hall-name:hover {
+    background-color: #eadeed;
+    border: 3px solid #640aa3;
+}
+
+.reservation__hall-name:active {
+    color: #fff;
+    background-color: #6c0287;
+    border: 3px solid #fff;
+}
+
+.reservation__hall-name:focus {
+    background-color: #fff;
+    border: 3px solid #640aa3;
+}
+
+.reservation__button:hover {
+    color: #fff;
+    background-color: #6c0287;
+    border: 3px solid #6c0287;
+}
+
+.reservation__button:active {
+    color: #fff;
+    background-color: #6c0287;
+    border: 3px solid #6c0287;
+}
+
+.reservation__button:focus {
+    color: #fff;
+    background-color: #6c0287;
+    border: 3px solid #6c0287;
+}
+
+.reservation__data-input:focus,
+.reservation__adress-input:focus {
+    outline: none;
+    border: 2px solid #cd06ff;
+}
+
+.reservation__check-unput:focus {
+    outline: 1px solid #cd06ff;
 }
