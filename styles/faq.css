@@ -34,3 +34,25 @@
   height: 40px;
   content: '';
 }
+
+.faq__item:nth-child(odd):hover::after {
+
+  background: url("../assets/images/open-purple-hover.svg");
+  background-size: cover;
+}
+
+.faq__item:nth-child(even):hover::after {
+  background: url("../assets/images/open_white_hover.svg");
+  background-size: cover;
+}
+
+.faq__item:nth-child(odd):active::after {
+
+  background: url("../assets/images/open-purple-active.svg");
+  background-size: cover;
+}
+
+.faq__item:nth-child(even):active::after {
+  background: url("../assets/images/open_white_active.svg");
+  background-size: cover;
+}
