@@ -80,21 +80,9 @@
     overflow: hidden;
 }
 
-.footer__social{
-    outline: 1px solid transparent;
-    outline-offset: 3px;
-    color: #fff;
-}
-
-.footer__social:hover {
-    color: #eadeed;
-}
-
-.footer__social:active {
-    color: #cd06ff;
-}
-
-.footer__social:focus {
-    color: #eadeed;
-    outline: 1px solid #cd06ff;
+.footer__social-link {
+    outline: 1px solid transparent;    
+    color: #fff;    
+    height: 50px;
+    width: 50px;    
 }

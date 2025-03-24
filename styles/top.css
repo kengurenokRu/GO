@@ -69,6 +69,8 @@
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
+    transition-duration: 0.2s; 
+    transition-property: background-color, box-shadow;
 }
 
 .top__arrow {
@@ -77,6 +79,8 @@
     bottom: 90px;
     fill: transparent;
     z-index: 1;
+    transition-duration: 0.2s; 
+    transition-property: fill, stroke, border;
 }
 
 .top__arrow-circle {

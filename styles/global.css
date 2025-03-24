@@ -48,6 +48,21 @@ button {
 a {
     text-decoration: none;
     color: inherit;
+    transition-duration: 0.2s;
+    transition-property: color, outline;
+}
+
+a:hover {
+    color: #eadeed;
+}
+
+a:active {
+    color: #cd06ff;
+}
+
+a:focus {
+    color: #eadeed;
+    outline: 1px solid #cd06ff;
 }
 
 ul {
