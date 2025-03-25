@@ -1,5 +1,6 @@
 .footer {
     padding: 50px 0;
+    background-image: linear-gradient(rgba(27, 26, 27, 1), rgba(55, 10, 55, 1));
 }
 
 .footer__block-container {
@@ -18,7 +19,7 @@
 }
 
 .footer__contact-name {
-    color: #fff;
+    color: var(--white-color, #fff);
     text-decoration: none;
 }
 
@@ -35,7 +36,7 @@
 }
 
 .footer__contact-name {
-    color: #fff;
+    color: var(--white-color, #fff);
     text-decoration: none;
 }
 
@@ -62,9 +63,9 @@
     background-image: url('../assets/images/envelope.svg');
 }
 
-.footer__social-item {
-    display: inline-block;
-    margin-right: 25px;
+.footer__social-list{
+    display: flex;
+    gap:25px;
 }
 
 .footer__social-item:last-of-type {
@@ -81,8 +82,9 @@
 }
 
 .footer__social-link {
+    display: block;
     outline: 1px solid transparent;    
-    color: #fff;    
+    color: var(--white-color, #fff);    
     height: 50px;
     width: 50px;    
 }

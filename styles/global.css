@@ -7,6 +7,14 @@
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
+    --bg-color: #1b1a1b;
+    --white-color: #fff;
+    --pink-color: #cd06ff;
+    --dark-purple: #440F51;
+    --purple: #6c0287;
+    --active-button: #640aa3;
+    --focus-hover-button: #840aa3;
+    --light-purple: #eadeed;
 }
 
 *,
@@ -23,8 +31,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: #fff;
-    background-color: #1b1a1b;
+    color: var(--white-color, #fff);
+    background-color: var(--bg-color, #1b1a1b);
 }
 
 img,
@@ -53,16 +61,16 @@ a {
 }
 
 a:hover {
-    color: #eadeed;
-}
-
-a:active {
-    color: #cd06ff;
+    color: var(--light-purple, #eadeed);
 }
 
 a:focus {
-    color: #eadeed;
-    outline: 1px solid #cd06ff;
+    color: var(--light-purple, #eadeed);
+    outline: 1px solid var(--pink-color, #cd06ff);
+}
+
+a:active {
+    color: var(--pink-color, #cd06ff);
 }
 
 ul {

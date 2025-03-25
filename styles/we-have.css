@@ -17,6 +17,10 @@
     transition-duration: 0.2s;
 }
 
+.we-have__item_transform{
+    transform: translateY(70px);
+}
+
 .we-have__item:hover {
     scale: 1.1;
 }
