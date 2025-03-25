@@ -1,5 +1,5 @@
 .faq__item {
-  background-color: #fff;
+  background-color: var(--white-color, #fff);
   color: #1C1A1A;
   font-weight: 700;
   font-size: 24px;
@@ -13,8 +13,8 @@
 }
 
 .faq__item:nth-child(even) {
-  color: white;
-  background-color: #440F51;
+  color: var(--white-color, #fff);
+  background-color: var(--dark-purple, #440F51);
 }
 
 .faq__item:nth-child(odd)::after {

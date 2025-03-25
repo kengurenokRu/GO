@@ -46,7 +46,7 @@
 }
 
 .top__text_purple {
-    color: #cd06ff;
+    color: var(--pink-color, #cd06ff);;
 }
 
 .top__text_small {
@@ -63,9 +63,9 @@
     min-width: 374px;
     min-height: 80px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px #6c0287;
-    background-color: #6c0287;
-    color: #fff;
+    box-shadow: 0px 0px 20px 5px var(--purple, #6c0287);
+    background-color: var(--purple, #6c0287);
+    color: var(--white-color, #fff);
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
@@ -84,49 +84,49 @@
 }
 
 .top__arrow-circle {
-    stroke: #fff;
+    stroke: var(--white-color, #fff);
 }
 
 .top__arrow-rect {
-    fill: #fff;
+    fill: var(--white-color, #fff);
 }
 
 .top__button:hover {
-    box-shadow: 0px 0px 20px 5px #840aa3;
-    background-color: #840aa3;
-}
-
-.top__button:active {
-    box-shadow: 0px 0px 20px 5px #640aa3;
-    background-color: #640aa3;
+    box-shadow: 0px 0px 20px 5px var(--focus-hover-button, #840aa3);
+    background-color: var(--focus-hover-button, #840aa3);
 }
 
 .top__button:focus {
-    box-shadow: 0px 0px 20px 5px #840aa3;
-    background-color: #840aa3;
+    box-shadow: 0px 0px 20px 5px var(--focus-hover-button, #840aa3);
+    background-color: var(--focus-hover-button, #840aa3);
+}
+
+.top__button:active {
+    box-shadow: 0px 0px 20px 5px var(--active-button, #640aa3);
+    background-color: var(--active-button, #640aa3);
 }
 
 .top__arrow:hover {
-    fill: #fff;
+    fill: var(--white-color, #fff);
 }
 
 .top__arrow:hover .top__arrow-rect {
-    fill: #6c0287;
-}
-
-.top__arrow:active {
-    fill: #cd06ff;
-    border: 1px solid #cd06ff;
-}
-
-.top__arrow:active .top__arrow-rect {
-    fill: #fff;
-}
-
-.top__arrow:active .top__arrow-circle {
-    stroke: #cd06ff;
+    fill: var(--purple, #6c0287);
 }
 
 .top__arrow:focus {
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var(--pink-color, #cd06ff);;
+}
+
+.top__arrow:active {
+    fill: var(--pink-color, #cd06ff);;
+    border: 1px solid var(--pink-color, #cd06ff);;
+}
+
+.top__arrow:active .top__arrow-rect {
+    fill: var(--white-color, #fff);
+}
+
+.top__arrow:active .top__arrow-circle {
+    stroke: var(--pink-color, #cd06ff);;
 }

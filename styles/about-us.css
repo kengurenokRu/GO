@@ -8,7 +8,7 @@
 .about-us__quotes {
     font-size: 44px;
     font-weight: 900;
-    color: #6c0287;
+    color: var(--purple, #6c0287);
 }
 
 .about-us__quotes-left {

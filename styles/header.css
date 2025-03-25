@@ -8,19 +8,19 @@
 }
 
 .header__logo-text {
-    fill: #fff;
+    fill: var(--white-color, #fff);
 }
 
 .header__logo-border {
-    fill: #cd06ff;
+    fill: var(--pink-color, #cd06ff);;
 }
 
 .header__button {
     padding: 15px 32px;
     font-size: 22px;
     text-transform: uppercase;
-    color: #fff;
-    border: 3px solid #cd06ff;
+    color: var(--white-color, #fff);
+    border: 1px solid var(--pink-color, #cd06ff);;
     border-radius: 10px;
     max-width: 280px;
     max-height: 55px;
@@ -35,19 +35,19 @@
 }
 
 .header__button:hover {
-    color: #fff;
-    background-color: #6c0287;
-    border: 3px solid #6c0287;
-}
-
-.header__button:active {
-    color: #fff;
-    background-color: #640aa3;
-    border: 1px solid #fff;
+    color: var(--white-color, #fff);
+    background-color: var(--purple, #6c0287);
+    border: 1px solid var(--purple, #6c0287);
 }
 
 .header__button:focus {
-    color: #fff;
-    background-color: #6c0287;
-    border: 3px solid #6c0287;
+    color: var(--white-color, #fff);
+    background-color: var(--purple, #6c0287);
+    border: 1px solid var(--purple, #6c0287);
+}
+
+.header__button:active {
+    color: var(--white-color, #fff);
+    background-color: var(--active-button, #640aa3);
+    border: 1px solid var(--white-color, #fff);
 }

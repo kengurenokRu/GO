@@ -1,5 +1,5 @@
 .reservation {
-    background-color: #440f51;
+    background-color: var(--dark-purple, #440F51);
 }
 
 .reservation__container {
@@ -55,8 +55,8 @@
 
 .reservation__hall-name {
     cursor: pointer;
-    background-color: #fff;
-    border: 3px solid #fff;
+    background-color: var(--white-color, #fff);
+    border: 3px solid var(--white-color, #fff);
     color: #000;
     font-size: 30px;
     font-weight: 700;
@@ -155,8 +155,8 @@
 }
 
 .reservation__button {
-    color: #440f51;
-    background-color: #fff;
+    color: var(--dark-purple, #440F51);
+    background-color: var(--white-color, #fff);
     border: none;
     border-radius: 10px;
     min-width: 300px;
@@ -173,45 +173,45 @@
 }
 
 .reservation__hall-name:hover {
-    background-color: #eadeed;
-    border: 3px solid #640aa3;
-}
-
-.reservation__hall-name:active {
-    color: #fff;
-    background-color: #6c0287;
-    border: 3px solid #fff;
+    background-color: var(--light-purple, #eadeed);
+    border: 3px solid var(--active-button, #640aa3);
 }
 
 .reservation__hall-name:focus {
-    background-color: #fff;
-    border: 3px solid #640aa3;
+    background-color: var(--white-color, #fff);
+    border: 3px solid var(--active-button, #640aa3);
+}
+
+.reservation__hall-name:active {
+    color: var(--white-color, #fff);
+    background-color: var(--purple, #6c0287);
+    border: 3px solid var(--white-color, #fff);
 }
 
 .reservation__button:hover {
-    color: #fff;
-    background-color: #6c0287;
-    border: 3px solid #6c0287;
-}
-
-.reservation__button:active {
-    color: #fff;
-    background-color: #6c0287;
-    border: 3px solid #6c0287;
+    color: var(--white-color, #fff);
+    background-color: var(--purple, #6c0287);
+    border: 3px solid var(--purple, #6c0287);
 }
 
 .reservation__button:focus {
-    color: #fff;
-    background-color: #6c0287;
-    border: 3px solid #6c0287;
+    color: var(--white-color, #fff);
+    background-color: var(--purple, #6c0287);
+    border: 3px solid var(--purple, #6c0287);
+}
+
+.reservation__button:active {
+    color: var(--white-color, #fff);
+    background-color: var(--purple, #6c0287);
+    border: 3px solid var(--purple, #6c0287);
 }
 
 .reservation__data-input:focus,
 .reservation__adress-input:focus {
     outline: none;
-    border: 2px solid #cd06ff;
+    border: 2px solid var(--pink-color, #cd06ff);;
 }
 
 .reservation__check-unput:focus {
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var(--pink-color, #cd06ff);;
 }
