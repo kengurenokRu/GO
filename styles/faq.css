@@ -1,6 +1,8 @@
 .faq__item {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--white-color, #fff);
-  color: #1C1A1A;
+  color: var(--bg-color, #1b1a1b);
   font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
@@ -17,42 +19,62 @@
   background-color: var(--dark-purple, #440F51);
 }
 
-.faq__item:nth-child(odd)::after {
-
-  background: url("../assets/images/open-purple.svg");
-  background-size: cover;
+.faq__item-pic {
+  fill: none;
 }
 
-.faq__item:nth-child(even)::after {
-  background: url("../assets/images/open.svg");
-  background-size: cover;
+.faq__circle,
+.faq__vertical,
+.faq__minus{
+  transition-duration: 0.2s;
+  transition-property: stroke, fill;
 }
 
-.faq__item::after {
-  float: right;
-  width: 40px;
-  height: 40px;
-  content: '';
+.faq__circle_purple,
+.faq__vertical_purple,
+.faq__minus_purple {  
+  stroke: var(--dark-purple, #440F51);
 }
 
-.faq__item:nth-child(odd):hover::after {
-
-  background: url("../assets/images/open-purple-hover.svg");
-  background-size: cover;
+.faq__vertical_purple,
+.faq__minus_purple {
+  fill: var(--dark-purple, #440F51);
 }
 
-.faq__item:nth-child(even):hover::after {
-  background: url("../assets/images/open_white_hover.svg");
-  background-size: cover;
+.faq__circle_white,
+.faq__vertical_white,
+.faq__minus_white {  
+  stroke: var(--white-color, #fff);
+
 }
 
-.faq__item:nth-child(odd):active::after {
-
-  background: url("../assets/images/open-purple-active.svg");
-  background-size: cover;
+.faq__vertical_white,
+.faq__minus_white {
+  fill: var(--white-color, #fff);
 }
 
-.faq__item:nth-child(even):active::after {
-  background: url("../assets/images/open_white_active.svg");
-  background-size: cover;
+.faq__item:hover .faq__circle_white {
+  fill: var(--white-color, #fff);
+}
+
+.faq__item:hover .faq__vertical_white,
+.faq__item:hover .faq__minus_white {
+  fill: var(--dark-purple, #440F51);
+  stroke: var(--dark-purple, #440F51);
+}
+
+.faq__item:hover .faq__circle_purple {
+  fill: var(--dark-purple, #440F51);
+}
+
+.faq__item:hover .faq__vertical_purple,
+.faq__item:hover .faq__minus_purple {
+  fill: var(--white-color, #fff);
+  stroke: var(--white-color, #fff);
+}
+
+.faq__item:active .faq__vertical_purple,
+.faq__item:active .faq__vertical_white {  
+  fill: none;
+  stroke: none;
 }
