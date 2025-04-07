@@ -65,7 +65,7 @@
     min-width: 250px;
     padding: 7px 15px 8px 15px;
     border-radius: 8px;
-    transition-duration: 0.2s; 
+    transition-duration: 0.2s;
     transition-property: color, background-color, border;
 }
 
@@ -119,14 +119,14 @@
 .reservation__data-input {
     min-height: 52px;
     min-width: 280px;
-    transition-duration: 0.2s; 
+    transition-duration: 0.2s;
     transition-property: outline, border;
 }
 
 .reservation__adress-input {
     min-height: 52px;
     min-width: 300px;
-    transition-duration: 0.2s; 
+    transition-duration: 0.2s;
     transition-property: outline, border;
 }
 
@@ -164,7 +164,7 @@
     text-align: center;
     font-size: 28px;
     font-weight: 700;
-    transition-duration: 0.2s; 
+    transition-duration: 0.2s;
     transition-property: color, background-color, border;
 }
 
@@ -172,17 +172,20 @@
     display: inline-block;
 }
 
-.reservation__hall-name:hover {
+.reservation__hall:not(:disabled)+.reservation__hall-name:hover {
+    color: var(--black-color, #000);
     background-color: var(--light-purple, #eadeed);
-    border: 3px solid var(--active-button, #640aa3);
+    border: 3px solid var(--active-button, #640aa3);    
 }
 
-.reservation__hall-name:focus {
+.reservation__hall+.reservation__hall-name:focus {
+    color: var(--black-color, #000);
     background-color: var(--white-color, #fff);
     border: 3px solid var(--active-button, #640aa3);
 }
 
-.reservation__hall-name:active {
+.reservation__hall:active+.reservation__hall-name,
+.reservation__hall:checked+.reservation__hall-name {
     color: var(--white-color, #fff);
     background-color: var(--purple, #6c0287);
     border: 3px solid var(--white-color, #fff);
@@ -209,9 +212,11 @@
 .reservation__data-input:focus,
 .reservation__adress-input:focus {
     outline: none;
-    border: 2px solid var(--pink-color, #cd06ff);;
+    border: 2px solid var(--pink-color, #cd06ff);
+    ;
 }
 
 .reservation__check-unput:focus {
-    outline: 1px solid var(--pink-color, #cd06ff);;
+    outline: 1px solid var(--pink-color, #cd06ff);
+    ;
 }

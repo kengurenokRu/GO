@@ -1,3 +1,7 @@
+.we-have{
+    padding-bottom: 120px;
+}
+
 .we-have__list {
     display: flex;
     flex-wrap: wrap;
