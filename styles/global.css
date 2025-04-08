@@ -2,6 +2,7 @@
     position: relative;
     overflow-x: hidden;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -15,7 +16,7 @@
     --purple: #6c0287;
     --active-button: #640aa3;
     --focus-hover-button: #840aa3;
-    --light-purple: #eadeed;
+    --light-purple: #eadeed; 
 }
 
 *,
@@ -130,7 +131,59 @@ address {
 .subtitle {
     font-weight: 700;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     text-align: center;
+}
+
+@media (max-width: 1250px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .subtitle {
+        font-size: 30px;
+        margin-bottom: 36px;
+    }
+
+    .section {
+        padding: 35px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 320px;
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .section {
+        padding: 15px 0;
+    }
 }

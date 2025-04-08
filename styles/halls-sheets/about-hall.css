@@ -1,0 +1,16 @@
+.about-hall__block {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 80px;
+    align-items: center;
+}
+
+.about-hall__text {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.about-hall__text:first-child {
+    margin-bottom: 20px;
+}

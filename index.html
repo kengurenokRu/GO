@@ -14,6 +14,13 @@
 <body>
   <header class="header">
     <div class="container header__container">
+      <svg class="header__burger" width="54" height="29" viewBox="0 0 54 29" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect class="header__logo-border" width="54" height="5" rx="2" />
+        <rect class="header__logo-border" y="12" width="54" height="5" rx="2" />
+        <rect class="header__logo-border" y="24" width="31" height="5" rx="2" />
+      </svg>
+
       <svg class="header__logo" width="120" height="66" viewBox="0 0 120 66" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path class="header__logo-text"
@@ -26,12 +33,12 @@
         <path class="header__logo-border" d="M120 0V1H69V0H120Z" />
       </svg>
       <nav class="header__menu">
-        <ul class="header__menu">
+        <ul class="header__menu-list">
           <li class="header__item"><a class="header__link-text" href="#halls">Залы</a></li>
-          <li class="header__item"><a class="header__link-text" href="#aboutUs">О нас</a></li>
+          <li class="header__item"><a class="header__link-text" href="#about-us">О нас</a></li>
           <li class="header__item"><a class="header__link-text" href="#reservation">Бронь</a></li>
           <li class="header__item"><a class="header__link-text" href="#review">Отзывы</a></li>
-          <li class="header__item"><a class="header__link-text" href="#contacts">Котакты</a></li>
+          <li class="header__item"><a class="header__link-text" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <button class="header__button" type="button">Заказать звонок</button>
@@ -46,36 +53,37 @@
           <div class="top__text-block">
             <p class="top__text top__text_purple top__text_big">4</p>
             <p class="top__text">Тематических
-              зала</p>
+зала</p>
           </div>
           <div class="top__text-block">
             <p class="top__text top__text_purple top__text_small">new</p>
             <p class="top__text">Новейшая
-              аппаратура</p>
+аппаратура</p>
           </div>
         </div>
         <button class="top__button">Забронировать</button>
-        <svg class="top__arrow" width="97" height="97" viewBox="0 0 97 97" xmlns="http://www.w3.org/2000/svg">
-          <circle class="top__arrow-circle" cx="48.5" cy="48.5" r="48" />
-          <rect class="top__arrow-rect" x="34.4255" y="43.9162" width="1.82001" height="20.0201"
-            transform="rotate(-44.9975 34.4255 43.9162)" />
-          <rect class="top__arrow-rect" x="48.5807" y="58.0737" width="1.82001" height="20.0201"
-            transform="rotate(-134.997 48.5807 58.0737)" />
+        <a class="top__arrow-link" href="#we-have"><svg class="top__arrow" width="97" height="97" viewBox="0 0 97 97"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle class="top__arrow-circle" cx="48.5" cy="48.5" r="48" />
+            <rect class="top__arrow-rect" x="34.4255" y="43.9162" width="1.82001" height="20.0201"
+              transform="rotate(-44.9975 34.4255 43.9162)" />
+            <rect class="top__arrow-rect" x="48.5807" y="58.0737" width="1.82001" height="20.0201"
+              transform="rotate(-134.997 48.5807 58.0737)" /></a>
         </svg>
       </div>
     </section>
-    <section class="section we-have">
+    <section class="section we-have" id="we-have">
       <div class="container">
         <h2 class="subtitle we-have__subtitle">У нас есть все для классного
           отдыха с друзьями!</h2>
         <ul class="we-have__list">
           <li class="we-have__item we-have__item_VR">VR очки</li>
-          <li class="we-have__item we-have__item_audio we-have__item_transform">Аудио-систеа 5.1 
-с оличным звуком</li>
+          <li class="we-have__item we-have__item_audio we-have__item_transform">Аудио-систеа 5.1
+            с оличным звуком</li>
           <li class="we-have__item we-have__item_sound">Караоке (4 микрофона)</li>
           <li class="we-have__item we-have__item_table-game">Настольные игры</li>
-          <li class="we-have__item we-have__item_films we-have__item_transform">Кино срвисы Netflix, IVI, 
-MegaGo, КиноПоиск, Okko</li>
+          <li class="we-have__item we-have__item_films we-have__item_transform">Кино срвисы Netflix, IVI,
+            MegaGo, КиноПоиск, Okko</li>
           <li class="we-have__item we-have__item_game">PlayStation 5 </li>
         </ul>
       </div>
@@ -295,7 +303,7 @@ MegaGo, КиноПоиск, Okko</li>
         <ul class="faq__list">
           <li class="faq__item">
             <p class="faq__item-text">Можно ли забронировать комнату онлайн?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">              
+            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
               <circle class="faq__circle faq__circle_purple" cx="23" cy="23" r="22" stroke-width="2" />
               <path class="faq__vertical faq__vertical_purple" d="M22.8305 14H23.5085V34H22.8305V14Z" />
               <path class="faq__minus faq__minus_purple" d="M13 24.1695V23.4915H33V24.1695H13Z" />
@@ -303,7 +311,7 @@ MegaGo, КиноПоиск, Okko</li>
           </li>
           <li class="faq__item">
             <p class="faq__item-text">Могут ли мне вернуть деньги за бронь?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">              
+            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
               <circle class="faq__circle faq__circle_white" cx="23.0001" cy="23" r="22" stroke-width="2" />
               <path class="faq__vertical faq__vertical_white" d="M22.8306 14H23.5086V34H22.8306V14Z" />
               <path class="faq__minus faq__minus_white" d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" />
@@ -311,7 +319,7 @@ MegaGo, КиноПоиск, Okko</li>
           </li>
           <li class="faq__item">
             <p class="faq__item-text">Какая комната самая популярная?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">              
+            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
               <circle class="faq__circle faq__circle_purple" cx="23" cy="23" r="22" stroke-width="2" />
               <path class="faq__vertical faq__vertical_purple" d="M22.8305 14H23.5085V34H22.8305V14Z" />
               <path class="faq__minus faq__minus_purple" d="M13 24.1695V23.4915H33V24.1695H13Z" />
@@ -319,7 +327,7 @@ MegaGo, КиноПоиск, Okko</li>
           </li>
           <li class="faq__item">
             <p class="faq__item-text">Как получить VIP-карту?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">              
+            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
               <circle class="faq__circle faq__circle_white" cx="23.0001" cy="23" r="22" stroke-width="2" />
               <path class="faq__vertical faq__vertical_white" d="M22.8306 14H23.5086V34H22.8306V14Z" />
               <path class="faq__minus faq__minus_white" d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" />
@@ -327,7 +335,7 @@ MegaGo, КиноПоиск, Okko</li>
           </li>
           <li class="faq__item">
             <p class="faq__item-text">Какая комната самая популярная?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">              
+            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
               <circle class="faq__circle faq__circle_purple" cx="23" cy="23" r="22" stroke-width="2" />
               <path class="faq__vertical faq__vertical_purple" d="M22.8305 14H23.5085V34H22.8305V14Z" />
               <path class="faq__minus faq__minus_purple" d="M13 24.1695V23.4915H33V24.1695H13Z" />
@@ -392,8 +400,13 @@ MegaGo, КиноПоиск, Okko</li>
           </ul>
         </div>
         <div class="footer__block">
-          <img class="footer__map" src="./assets/images/map.png" alt="Карта местополжения">
+          <img class="footer__map" src="../assets/images/map.png" alt="Карта местополжения">
         </div>
+      </div>
+      <div class="footer__padding">
+        <p class="footer_paddin-item">© Game Over, 2022</p>
+        <p class="footer_paddin-item">Design by Anastasia Ilina</p>
+        <p class="footer_paddin-item">ilina9825@gmail.com</p>
       </div>
       <!-- <h2 class="subtitle" id="call">Заказать звонок</h2>
       <form id="form-call" action="https://jsonplaceholder.typicode.com/posts" method="POST">
