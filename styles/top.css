@@ -12,6 +12,7 @@
 .top__sub {
     padding-left: 100px;
     margin-bottom: 30px;
+    font-size: 22px;
 }
 
 .top__container {
@@ -201,6 +202,7 @@
     .top__sub {
         padding-left: 67px;
         margin-bottom: 50px;
+        font-size: 18px;
     }
 
     .top__text {
@@ -255,6 +257,7 @@
     .top__sub {
         padding-left: 19px;
         margin-bottom: 10px;
+        font-size: 10px;
     }
 
     .top__text {
@@ -286,5 +289,8 @@
         height: 179px;        
         bottom: 0;
         right: 20px;
+    }
+    .top__container{
+        margin: 0 auto;
     }
 }
