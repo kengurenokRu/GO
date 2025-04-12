@@ -1,0 +1,35 @@
+.top-hall__container {
+    padding: 0;
+}
+
+.top-hall__image {
+    position: relative;
+    margin-bottom: 100px;    
+}
+
+.top-hall__picture{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.title {
+    font-size: 90px;
+    align-items: center;
+}
+
+.top-hall__caption {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+}
+
+.top-hall__text {
+    font-size: 24px;
+    line-height: 150%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}

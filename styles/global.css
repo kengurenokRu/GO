@@ -16,7 +16,7 @@
     --purple: #6c0287;
     --active-button: #640aa3;
     --focus-hover-button: #840aa3;
-    --light-purple: #eadeed; 
+    --light-purple: #eadeed;
 }
 
 *,
@@ -137,13 +137,15 @@ address {
 }
 
 @media (max-width: 1250px) {
+    body {
+        font-size: 18px;
+    }
+
     .container {
         max-width: 1024px;
         padding: 0 60px;
     }
-}
 
-@media (max-width: 1024px) {
     .subtitle {
         font-size: 30px;
         margin-bottom: 36px;
@@ -154,7 +156,11 @@ address {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
+    body {
+        font-size: 16px;
+    }
+
     .container {
         max-width: 768px;
         padding: 0 40px;
@@ -171,7 +177,11 @@ address {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 680px) {
+    body {
+        font-size: 12px;
+    }
+
     .container {
         max-width: 320px;
         padding: 0 20px;
