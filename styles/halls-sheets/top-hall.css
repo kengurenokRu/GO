@@ -2,8 +2,14 @@
     padding: 0;
 }
 
-.top-hall__back { 
-    display: block;   
+.top-hall__picture { 
+    width: 100%;   
+    object-fit: cover;
+    object-position: center;
+}
+
+.top-hall__back {
+    display: block;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -17,7 +23,9 @@
 
 .top-hall__image {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 100px;    
+    max-height: 750px;
+    overflow: hidden;
 }
 
 .top-hall__caption {
@@ -36,49 +44,68 @@
     text-align: center;
 }
 
-@media (max-width: 1024px){
+.top-hall__text-container {
+    padding: 0 130px;
+}
+
+@media (max-width: 1024px) {
     .top-hall__text {
-        font-size: 20px;        
-        max-width: 800px;        
+        font-size: 20px;
+        max-width: 800px;
     }
 
-    .top-hall__back {     
+    .top-hall__text-container {
+        padding: 0 60px;
+    }
+
+    .top-hall__back {
         padding-left: 60px;
     }
 
-    .top-hall__image {        
+    .top-hall__image {
         margin-bottom: 70px;
+        max-height: 534px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .top-hall__text {
-        font-size: 16px;        
-        max-width: 690px;        
+        font-size: 16px;
+        max-width: 690px;
     }
 
-    .top-hall__back {          
+    .top-hall__text-container {
+        padding: 0 40px;
+    }
+
+    .top-hall__back {
         font-size: 16px;
         padding-left: 40px;
     }
 
-    .top-hall__image {        
+    .top-hall__image {
         margin-bottom: 60px;
+        max-height: 402px;
     }
 }
 
-@media (max-width: 320px){
-    .top-hall__text {                
-        max-width: 280px;        
+@media (max-width: 560px) {
+    .top-hall__text {
+        max-width: 560px;
     }
 
-    .top-hall__back {           
-        font-size: 12px;        
+    .top-hall__text-container {
+        padding: 0 20px;
+    }
+
+    .top-hall__back {
+        font-size: 12px;
         margin-bottom: 15px;
         padding-left: 20px;
     }
 
-    .top-hall__image {        
+    .top-hall__image {
         margin-bottom: 30px;
+        max-height: 168px;
     }
 }

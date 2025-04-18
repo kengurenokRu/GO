@@ -3,18 +3,25 @@
 @import "about-hall.css";
 @import "other-hall.css";
 
-.picture {
-    max-width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
 .title {
     font-size: 90px;
+    font-weight: 700;
+    line-height: 80px;
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .title {
+        font-size: 60px;        
+        line-height: 120px;
+    }
+}
 
+@media (max-width: 560px) {
+    .title {
+        font-size: 30px; 
+    }
+}
 
 
 

@@ -1,0 +1,195 @@
+.about-us__grid-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 48px 70px;
+}
+
+.about-us__image {
+    display: block;
+    grid-area: 1 / 1 / 3 / 2;
+    object-fit: contain;
+    height: 100%;
+}
+
+.about-us__quote {
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-left: 31px;
+    margin-bottom: 39px;
+}
+
+.about-us__quotes {
+    font-size: 44px;
+    font-weight: 900;
+    color: var(--purple, #6c0287);
+}
+
+.about-us__quotes-left {
+    float: left;
+}
+
+.about-us__quote-sub {
+    float: right;
+}
+
+.about-us__quote-sub-text {
+    display: inline-block;
+    text-align: left;
+    line-height: 28px;
+    padding-left: 30px;
+    max-width: 280px;
+}
+
+.about-us__boss-foto {
+    display: inline-block;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center -10px;
+}
+
+.about-us__text {
+    line-height: 28px;
+}
+
+.about-us__text:first-child {
+    margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .about-us__grid-block {
+        gap: 40px;
+    }
+
+    .about-us__quote {
+        font-size: 30px;
+        margin-bottom: 13px;
+    }
+
+    .about-us__quotes {
+        font-size: 30px;
+    }
+
+    .about-us__quote-sub-text {
+
+        line-height: 26px;
+        padding-left: 18px;
+        max-width: 225px;
+    }
+
+    .about-us__boss-foto {
+        width: 70px;
+        height: 70px;
+    }
+
+    .about-us__text {
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 860px) {
+    .about-us__grid-block {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 30px 28px;
+    }
+
+    .about-us__image {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .about-us__citation {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .about-us__quote {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .about-us__quotes {
+        font-size: 32px;
+    }
+
+    .about-us__quote-sub-text {
+        font-size: 18px;
+        line-height: 26px;
+        padding-left: 18px;
+        max-width: 320px;
+    }
+
+    .about-us__boss-foto {
+        width: 70px;
+        height: 70px;
+    }
+
+    .about-us__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .about-us__text-block {
+        align-self: center;
+    }
+}
+
+@media (max-width: 680px) {
+    .about-us__grid-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 15px 0;
+    }
+
+    .about-us__image {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .about-us__text-block {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .about-us__citation {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .about-us__quote {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 9px;
+        padding-left: 9px;
+    }
+
+    .about-us__quotes {
+        font-size: 18px;
+    }
+
+    .about-us__quote-sub-text {
+        font-size: 12px;
+        max-width: 213px;
+        padding-left: 11px;
+    }
+
+    .about-us__boss-foto {
+        width: 56px;
+        height: 56px;
+    }
+
+    .about-us__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about-us__text:first-child {
+        margin-bottom: 10px;
+    }
+
+    .about-us__quote-sub {
+        align-items: center;
+    }
+}

@@ -7,13 +7,14 @@
 
 .other-hall__name {
     display: block;
-
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
     padding: 78px 0px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    white-space: pre-wrap;
 }
 
 .other-hall__item {
@@ -23,6 +24,8 @@
 
 .other-hall__name_theme_vibes {
     background-image: url("../../assets/images/80s_vibes.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .other-hall__name_theme_starwars {
@@ -35,4 +38,35 @@
 
 .other-hall__name_theme_neon {
     background-image: url("../../assets/images/neon_style.png");
+}
+
+
+
+@media (max-width: 1024px) {
+    .other-hall__name {
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .other-hall__name {
+        font-size: 20px;
+        padding: 43px 0px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .other-hall__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 5px;
+    }
+
+
+    .other-hall__name {
+        font-size: 20px;
+        padding: 50px 0px;
+    }
 }
