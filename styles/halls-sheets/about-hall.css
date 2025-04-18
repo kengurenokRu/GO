@@ -49,13 +49,13 @@
 }
 
 @media (max-width: 560px) {
-
     .about-hall__block {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
         grid-row-gap: 15px;
-        align-items: left;
+        text-align: left;
+        
     }
 
     .about-hall__text {

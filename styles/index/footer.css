@@ -74,11 +74,11 @@
     row-gap: 6px;
 }
 
-.footer_paddin-item {
+.footer__padding-item {
     font-size: 14px;
 }
 
-.footer_paddin-item:first-child {
+.footer__padding-item:first-child {
     grid-area: 1 / 1 / 3 / 2;
     text-align: left;
 }
