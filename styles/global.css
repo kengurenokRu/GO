@@ -2,6 +2,7 @@
     position: relative;
     overflow-x: hidden;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -130,7 +131,69 @@ address {
 .subtitle {
     font-weight: 700;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     text-align: center;
+}
+
+@media (max-width: 1250px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1250px;
+        padding: 0 60px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        margin-bottom: 36px;
+    }
+
+    .section {
+        padding: 35px 0;
+    }
+}
+
+@media (max-width: 840px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 840px;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 680px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 680px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .section {
+        padding: 15px 0;
+    }
 }

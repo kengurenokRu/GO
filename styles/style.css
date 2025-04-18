@@ -1,11 +1,13 @@
 @import "normalize.css";
 @import "global.css";
-@import "header.css";
-@import "top.css";
-@import "we-have.css";
-@import "halls.css";
-@import "reservation.css";
-@import "about-us.css";
-@import "review.css";
-@import "faq.css";
-@import "footer.css";
+@import "index/header.css";
+@import "index/top.css";
+@import "index/we-have.css";
+@import "index/halls.css";
+@import "index/reservation.css";
+@import "index/about-us.css";
+@import "index/review.css";
+@import "index/faq.css";
+@import "index/footer.css";
+
+@import "halls-sheets/halls-sheets.css";

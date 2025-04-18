@@ -1,0 +1,27 @@
+
+@import "top-hall.css";
+@import "about-hall.css";
+@import "other-hall.css";
+
+.title {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 80px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 60px;        
+        line-height: 120px;
+    }
+}
+
+@media (max-width: 560px) {
+    .title {
+        font-size: 30px; 
+    }
+}
+
+
+
