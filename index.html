@@ -8,19 +8,20 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
   <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="js/jquery-3.7.1.min.js"></script>
+  <script defer src="js/script.js"></script>
   <title>GAME OVER</title>
 </head>
 
 <body>
   <header class="header">
     <div class="container header__container">
-      <svg class="header__burger" width="54" height="29" viewBox="0 0 54 29" fill="none"
+      <svg class="header__burger" width="54" height="54" viewBox="0 0 54 29" fill="none"
         xmlns="http://www.w3.org/2000/svg">
-        <rect class="header__logo-border" width="54" height="5" rx="2" />
-        <rect class="header__logo-border" y="12" width="54" height="5" rx="2" />
-        <rect class="header__logo-border" y="24" width="31" height="5" rx="2" />
-      </svg>
-
+        <rect class="header__burger-border" width="54" height="5" rx="2" />
+        <rect class="header__burger-border" y="12" width="54" height="5" rx="2" />
+        <rect class="header__burger-border" y="24" width="31" height="5" rx="2" />
+      </svg>   
       <svg class="header__logo" width="120" height="66" viewBox="0 0 120 66" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path class="header__logo-text"
@@ -403,6 +404,40 @@
       </div>
     </div>
   </footer>
+  <div class="modal-form" hidden>
+    <div class="modal-form__wrapper">
+      <svg class="modal-form__close-btn" width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+        <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" />
+        <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)" />
+      </svg>
+      <h2 class="modal-form__caption">Заказать звонок</h2>
+      <form class="modal-form__window">
+        <label class="modal-form__data-label modal-form__data-label_block" for="name-modal">Имя
+          <input class="modal-form__data modal-form__data_block" type="text" id="name-modal" name="name-modal" required>
+        </label>
+        <label class="modal-form__data-label modal-form__data-label_block" for="pnone-modal">Телефон
+          <input class="modal-form__data modal-form__data_block" type="tel" id="pnone-modal" name="phone-modal"
+            required>
+        </label>
+        <input class="modal-form__submit-btn" type="submit" value="Забронировать">
+      </form>
+    </div>
+  </div>
+<div class="burger-menu" hidden>
+  <div class="burger-menu__wrapper">
+    <nav class="burger-menu__burger">
+        <ul class="burger-menu__burger-list">
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#halls">Залы</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#about-us">О нас</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#reservation">Бронь</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#review">Отзывы</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#contacts">Контакты</a></li>          
+        </ul>
+        <button class="burger-menu__button" type="button">Заказать звонок</button>
+    </nav>
+
+  </div>
+</div>
 </body>
 
 </html>

@@ -1,0 +1,116 @@
+.modal-form {
+  position: fixed;
+  top: 145px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 99;
+  
+}
+
+.modal-form__wrapper{
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 0 80px 0;
+  background-color: var(--dark-purple, #440F51);
+}
+
+.modal-form__window { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;  
+  padding: 30px 0;
+}
+
+.modal-form__caption {
+  display: block;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.modal-form__data-label_block,
+.modal-form__data_block {
+  display: block;
+}
+
+.modal-form__data {
+  min-height: 52px;
+  min-width: 280px;
+  transition-duration: 0.2s;
+  transition-property: outline, border;
+}
+
+.modal-form__submit-btn {
+  color: var(--dark-purple, #440F51);
+  background-color: var(--white-color, #fff);
+  box-shadow: 0px 0px 20px 5px var(--white-color, #fff);
+  border: none;
+  border-radius: 10px;
+  min-width: 300px;
+  min-height: 60px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  transition-duration: 0.2s;
+  transition-property: color, background-color, border;
+}
+
+.modal-form__submit-btn:hover,
+.modal-form__submit-btn:focus,
+.modal-form__submit-btn:active {
+  box-shadow: 0px 0px 30px 5px var(--white-color, #fff);
+}
+
+.modal-form__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  fill: var(--white-color, #fff);
+}
+
+
+@media (max-width: 680px) {
+
+  .modal-form {
+    padding: 20px;
+  }
+
+  .modal-form__window {
+    gap: 50px;
+  }
+
+  .modal-form__caption {
+    font-size: 20px;
+  }
+
+  .modal-form__data {
+    min-height: 42px;
+    min-width: 220px;
+  }
+
+  .modal-form__submit-btn {
+    min-width: 240px;
+    min-height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px 3px var(--white-color, #fff);
+  }
+
+  .modal-form__submit-btn:hover,
+  .modal-form__submit-btn:focus,
+  .modal-form__submit-btn:active {
+    box-shadow: 0px 0px 15px 3px var(--white-color, #fff);
+  }
+
+  .modal-form__close-btn {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
