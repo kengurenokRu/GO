@@ -8,6 +8,8 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
   <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="js/jquery-3.7.1.min.js"></script>
+  <script defer src="js/script.js"></script>
   <title>GAME OVER</title>
 </head>
 
@@ -403,6 +405,25 @@
       </div>
     </div>
   </footer>
+  <div class="modal-form" hidden>
+    <div class="modal-form__wrapper">
+      <svg class="modal-form__close-btn" width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+        <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" />
+        <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)" />
+      </svg>
+      <h2 class="modal-form__caption">Заказать звонок</h2>
+      <form class="modal-form__window">
+        <label class="modal-form__data-label modal-form__data-label_block" for="name-reserve">Имя
+          <input class="modal-form__data modal-form__data_block" type="text" id="name-modal" name="name-modal" required>
+        </label>
+        <label class="modal-form__data-label modal-form__data-label_block" for="pnone-reserve">Телефон
+          <input class="modal-form__data modal-form__data_block" type="tel" id="pnone-modal" name="phone-modal"
+            required>
+        </label>
+        <input class="modal-form__submit-btn" type="submit" value="Забронировать">
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
