@@ -1,13 +1,13 @@
 .modal-form {
   position: fixed;
-  top: 0;
+  top: 145px;
   bottom: 0;
   right: 0;
   left: 0;
   overflow: hidden;
   overflow-y: auto;
   z-index: 99;
-  padding: 145px 30px;
+  
 }
 
 .modal-form__wrapper{

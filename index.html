@@ -16,13 +16,12 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <svg class="header__burger" width="54" height="29" viewBox="0 0 54 29" fill="none"
+      <svg class="header__burger" width="54" height="54" viewBox="0 0 54 29" fill="none"
         xmlns="http://www.w3.org/2000/svg">
-        <rect class="header__logo-border" width="54" height="5" rx="2" />
-        <rect class="header__logo-border" y="12" width="54" height="5" rx="2" />
-        <rect class="header__logo-border" y="24" width="31" height="5" rx="2" />
-      </svg>
-
+        <rect class="header__burger-border" width="54" height="5" rx="2" />
+        <rect class="header__burger-border" y="12" width="54" height="5" rx="2" />
+        <rect class="header__burger-border" y="24" width="31" height="5" rx="2" />
+      </svg>   
       <svg class="header__logo" width="120" height="66" viewBox="0 0 120 66" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path class="header__logo-text"
@@ -424,6 +423,21 @@
       </form>
     </div>
   </div>
+<div class="burger-menu" hidden>
+  <div class="burger-menu__wrapper">
+    <nav class="burger-menu__burger">
+        <ul class="burger-menu__burger-list">
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#halls">Залы</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#about-us">О нас</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#reservation">Бронь</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#review">Отзывы</a></li>
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#contacts">Контакты</a></li>          
+        </ul>
+        <button class="burger-menu__button" type="button">Заказать звонок</button>
+    </nav>
+
+  </div>
+</div>
 </body>
 
 </html>

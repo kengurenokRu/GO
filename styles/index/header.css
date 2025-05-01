@@ -26,7 +26,6 @@
     text-transform: uppercase;
     color: var(--white-color, #fff);
     border: 1px solid var(--pink-color, #cd06ff);
-    ;
     border-radius: 10px;
     max-width: 280px;
     max-height: 55px;
@@ -60,7 +59,12 @@
 }
 
 .header__burger{
-    display: none;
+    display: none;    
+}
+
+.header__burger-border{
+    fill: var(--pink-color, #cd06ff);
+    transition: transform 0.2s;
 }
 
 @media (max-width: 1250px) {
