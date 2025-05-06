@@ -68,12 +68,22 @@ header__burger.click(function () {
   $('.header__burger').toggleClass("header__burger_active");
 });
 
-$('.faq__list').accordion({
+$('.faq__item').accordion({
   active: true,
   collapsible: true,
   heightStyle: 'content',
   icons: {
     "header": "faq__item_icon",
     "activeHeader": "faq__item_icon-active"
+  }
+});
+
+$('.faq__item:even').accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: 'content',
+  icons: {
+    "header": "faq__item_icon_purple",
+    "activeHeader": "faq__item_icon-active_purple"
   }
 });

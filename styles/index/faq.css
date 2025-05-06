@@ -1,13 +1,8 @@
 .faq__item {
- /* display: flex;
-  justify-content: space-between;*/  
-  /*background-color: var(--white-color, #fff);
-  color: var(--bg-color, #1b1a1b); */
-  color: var(--white-color, #fff);
-  background-color: var(--dark-purple, #440F51);
+  background-color: var(--white-color, #fff);
+  color: var(--bg-color, #1b1a1b); 
   font-weight: 700;
-  font-size: 24px;
-  
+  font-size: 24px;  
   line-height: 40px;
   list-style-type: none;
 }
@@ -15,16 +10,11 @@
 .faq__item:not(:last-of-type) {
   margin-bottom: 20px;
 }
-/*
+
 .faq__item:nth-child(even) {
   color: var(--white-color, #fff);
   background-color: var(--dark-purple, #440F51);
-}*/
-
-/*
-.faq__item-pic {
-  fill: none;
-}*/
+}
 
 .faq__item-button{
   position: relative;
@@ -58,10 +48,14 @@
   background-repeat: no-repeat;
 }
 
-/*
-.faq__item_icon:nth-child(even){ 
+
+.faq__item_icon_purple{ 
+  display: block;
+  width: 46px;
+  height: 46px;  
   background-image: url("../../../../assets/images/open_purple.svg");
-}*/
+  background-repeat: no-repeat;
+}
 
 .faq__item_icon-active{
   display: block;
@@ -71,62 +65,15 @@
   background-image: url("../../../../assets/images/open_white_active.svg");
   background-repeat: no-repeat;
 }
-/*
-.faq__circle,
-.faq__vertical,
-.faq__minus{
-  transition-duration: 0.2s;
-  transition-property: stroke, fill;
+
+.faq__item_icon-active_purple{  
+  display: block;
+  width: 46px;
+  width: 46px;
+  height: 46px;  
+  background-image: url("../../../../assets/images/open_purple_active.svg"); 
+  background-repeat: no-repeat;
 }
-
-.faq__circle_purple,
-.faq__vertical_purple,
-.faq__minus_purple {  
-  stroke: var(--dark-purple, #440F51);
-}
-
-.faq__vertical_purple,
-.faq__minus_purple {
-  fill: var(--dark-purple, #440F51);
-}
-
-.faq__circle_white,
-.faq__vertical_white,
-.faq__minus_white {  
-  stroke: var(--white-color, #fff);
-
-}
-
-.faq__vertical_white,
-.faq__minus_white {
-  fill: var(--white-color, #fff);
-}
-
-.faq__item:hover .faq__circle_white {
-  fill: var(--white-color, #fff);
-}
-
-.faq__item:hover .faq__vertical_white,
-.faq__item:hover .faq__minus_white {
-  fill: var(--dark-purple, #440F51);
-  stroke: var(--dark-purple, #440F51);
-}
-
-.faq__item:hover .faq__circle_purple {
-  fill: var(--dark-purple, #440F51);
-}
-
-.faq__item:hover .faq__vertical_purple,
-.faq__item:hover .faq__minus_purple {
-  fill: var(--white-color, #fff);
-  stroke: var(--white-color, #fff);
-}
-
-.faq__item:active .faq__vertical_purple,
-.faq__item:active .faq__vertical_white {  
-  fill: none;
-  stroke: none;
-}*/
 
 .faq__item-button:hover .faq__item_icon{
   background-image: url("../../../../assets/images/open_white_hover.svg");
@@ -134,6 +81,15 @@
 
 .faq__item-button:active .faq__item_icon{
   background-image: url("../../../../assets/images/open_white_active.svg");
+}
+
+
+.faq__item-button:hover:nth-child(odd) .faq__item_icon_purple{
+  background-image: url("../../../../assets/images/open_purple_hover.svg");
+}
+
+.faq__item-button:nth-child(odd):active .faq__item_icon_purple{
+  background-image: url("../../../../assets/images/open_purple_active.svg");
 }
 
 @media (max-width: 1250px) {
