@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
   <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d7aca0e0-c619-44c9-a9d7-57071f8ba034&lang=ru_RU" type="text/javascript"></script>
   <script defer src="js/jquery-3.7.1.min.js"></script>
   <script defer src="js/jquery-ui.min.js"></script>
   <script defer src="js/script.js"></script>
@@ -414,7 +415,7 @@
             </a>
           </li>
         </ul>
-        <img class="footer__map" src="./assets/images/map.png" alt="Карта местополжения">
+        <div class="footer__map" id="map"></div>
       </div>
       <div class="footer__padding">
         <p class="footer__padding-item">© Game Over, 2022</p>
