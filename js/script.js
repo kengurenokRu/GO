@@ -114,6 +114,6 @@ function init() {
     balloonContent: 'Game Over'
   });
   myMap.geoObjects.add(mark);
+  myMap.container.fitToViewport();
 }
 
-myMap.container.fitToViewport();
