@@ -5,7 +5,7 @@ const modalForm = $('.modal-form');
 const header__burger = $('.header__burger');
 const burgerMenu = $('.burger-menu');
 
-function hide_burgerMenu() {  
+function hide_burgerMenu() {
   if ($('.header__burger').hasClass("header__burger_active")) {
     $('.burger-menu').hide(500);
     $('.header__burger-border:nth-child(1)').css({
@@ -15,7 +15,7 @@ function hide_burgerMenu() {
       "transform": "rotate(0)"
     });
     $('.header__burger-border:nth-child(3)').show();
-  } 
+  }
 }
 
 callBtn.click(function () {
@@ -67,3 +67,53 @@ header__burger.click(function () {
   }
   $('.header__burger').toggleClass("header__burger_active");
 });
+
+
+$('.faq__list').accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: 'content',
+  icons: {
+    "header": "faq__item_icon",
+    "activeHeader": "faq__item_icon-active"
+  }
+});
+
+/*
+$('.faq__item').accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: 'content',
+  icons: {
+    "header": "faq__item_icon",
+    "activeHeader": "faq__item_icon-active"
+  }
+});
+
+$('.faq__item:even').accordion({
+  active: true,
+  collapsible: true,
+  heightStyle: 'content',  
+  icons: {
+    "header": "faq__item_icon_purple",
+    "activeHeader": "faq__item_icon-active_purple"
+  }
+});
+*/
+
+
+ymaps.ready(init);
+function init() {
+  const myMap = new ymaps.Map("map", {
+    center: [55.723151, 37.565021],
+    zoom: 17
+  });
+
+  const mark = new ymaps.Placemark([55.723151, 37.565021], {
+    hintContent: 'Game Over',
+    balloonContent: 'Game Over'
+  });
+  myMap.geoObjects.add(mark);
+  myMap.container.fitToViewport();
+}
+
