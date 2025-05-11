@@ -72,6 +72,7 @@
   top: 15px;
   right: 15px;
   fill: var(--white-color, #fff);
+  cursor: pointer;
 }
 
 

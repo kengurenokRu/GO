@@ -7,8 +7,12 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
+  <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./styles/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=d7aca0e0-c619-44c9-a9d7-57071f8ba034&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=d7aca0e0-c619-44c9-a9d7-57071f8ba034&lang=ru_RU"
+    type="text/javascript"></script>
   <script defer src="js/jquery-3.7.1.min.js"></script>
   <script defer src="js/jquery-ui.min.js"></script>
   <script defer src="js/script.js"></script>
@@ -18,12 +22,12 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <svg class="header__burger" width="54" height="54" viewBox="0 0 54 29" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+      <svg class="header__burger" width="54" height="54" viewBox="0 0 54 29" xmlns="http://www.w3.org/2000/svg">
         <rect class="header__burger-border" width="54" height="5" rx="2" />
         <rect class="header__burger-border" y="12" width="54" height="5" rx="2" />
         <rect class="header__burger-border" y="24" width="31" height="5" rx="2" />
-      </svg>   
+      </svg>
+
       <svg class="header__logo" width="120" height="66" viewBox="0 0 120 66" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path class="header__logo-text"
@@ -56,25 +60,24 @@
           <div class="top__text-block">
             <p class="top__text top__text_purple top__text_big">4</p>
             <p class="top__text">Тематических
-зала</p>
+              зала</p>
           </div>
           <div class="top__text-block">
             <p class="top__text top__text_purple top__text_small">new</p>
             <p class="top__text">Новейшая
-аппаратура</p>
+              аппаратура</p>
           </div>
         </div>
         <a class="top__button" href="#reservation">Забронировать</a>
         <a class="top__arrow-link" href="#we-have">
-          <svg class="top__arrow" width="97" height="97" viewBox="0 0 97 97"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="top__arrow" width="97" height="97" viewBox="0 0 97 97" xmlns="http://www.w3.org/2000/svg">
             <circle class="top__arrow-circle" cx="48.5" cy="48.5" r="48" />
             <rect class="top__arrow-rect" x="34.4255" y="43.9162" width="1.82001" height="20.0201"
               transform="rotate(-44.9975 34.4255 43.9162)" />
             <rect class="top__arrow-rect" x="48.5807" y="58.0737" width="1.82001" height="20.0201"
               transform="rotate(-134.997 48.5807 58.0737)" />
           </svg>
-      </a>
+        </a>
       </div>
     </section>
     <section class="section we-have" id="we-have">
@@ -261,103 +264,82 @@
         </div>
       </div>
     </section>
-    <section class="section review" id="review">
-      <div class="container">
-        <h2 class="subtitle review__subtitle">Отзывы посетителей</h2>
-        <ul class="review__list">
-          <li class="review__item">
-            <figure class="review__people review__block">
-              <div class="review__gradient">
-                <img class="review__foto review__foto_position-one" src="./assets/images/samojlov.jfif"
-                  alt="Фото Макса Самойлова">
-              </div>
-              <figcaption>Макс Самойлов</figcaption>
-            </figure>
-            <p class="review__text review__block">Омечали здесь день рождения с компанией друзей, все было очень круто!
-              VR
-              очки это просто бомба, никогда
-              еще
-              я не был в таком полном игровом погружени. Сервис на высоте!</p>
-          </li>
-          <li class="review__item">
-            <figure class="review__people review__block">
-              <div class="review__gradient"><img class="review__foto review__foto_position-two"
-                  src="./assets/images/grigoreva.jfif" alt="Фото Оксаны Григорьевой"></div>
-              <figcaption>Оксана Григорьева</figcaption>
-            </figure>
-            <p class="review__text review__block">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
-              получился корпоратив! У нас в городе
-              больше
-              нет подобных заведений.</p>
-          </li>
-          <li class="review__item">
-            <figure class="review__people review__block">
-              <div class="review__gradient">
-                <img class="review__foto review__foto_position-three" src="./assets/images/jaschenko.jfif"
-                  alt="Фото Никиты Ященко">
-              </div>
-              <figcaption>Никита Ященко</figcaption>
-            </figure>
-            <p class="review__text review__block">Немного подвисала игра в VR очках, а так все норм. Крутое формление
-              комнаты в стиле звездных войн, попал
-              в
-              атмосферу космоса.</p>
-          </li>
-        </ul>
+    <section class="section slider" id="review">
+      <div class="container slider__container">
+        <h2 class="subtitle slider__subtitle">Отзывы посетителей</h2>
+        <div class="swiper slider__swiper">
+          <div class="swiper-wrapper slider__swiper-wrapper">
+            <div class="swiper-slide slider__swiper-slide">
+              <figure class="slider__people slider__block">
+                <div class="slider__gradient">
+                  <img class="slider__foto slider__foto_position-one" src="./assets/images/samojlov.jfif"
+                    alt="Фото Макса Самойлова">
+                </div>
+                <figcaption>Макс Самойлов</figcaption>
+              </figure>
+              <p class="slider__text slider__block">Омечали здесь день рождения с компанией друзей, все было очень
+                круто!
+                VR
+                очки это просто бомба, никогда
+                еще
+                я не был в таком полном игровом погружени. Сервис на высоте!</p>
+            </div>
+            <div class="swiper-slide slider__swiper-slide">
+              <figure class="slider__people slider__block">
+                <div class="slider__gradient"><img class="slider__foto slider__foto_position-two"
+                    src="./assets/images/grigoreva.jfif" alt="Фото Оксаны Григорьевой"></div>
+                <figcaption>Оксана Григорьева</figcaption>
+              </figure>
+              <p class="slider__text slider__block">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
+                получился корпоратив! У нас в городе
+                больше
+                нет подобных заведений.</p>
+            </div>
+            <div class="swiper-slide slider__swiper-slide">
+              <figure class="slider__people slider__block">
+                <div class="slider__gradient">
+                  <img class="slider__foto slider__foto_position-three" src="./assets/images/jaschenko.jfif"
+                    alt="Фото Никиты Ященко">
+                </div>
+                <figcaption>Никита Ященко</figcaption>
+              </figure>
+              <p class="slider__text slider__block">Немного подвисала игра в VR очках, а так все норм. Крутое формление
+                комнаты в стиле звездных войн, попал
+                в
+                атмосферу космоса.</p>
+            </div>
+          </div>
+        </div>
+        <svg class="slider__button-left" width="34" height="66" viewBox="0 0 34 66" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32.5269 0L33.9411 1.41421L1.41422 33.9411L5.126e-06 32.5269L32.5269 0Z" />
+          <path d="M5.126e-06 32.5269L1.41422 31.1127L33.9411 63.6396L32.5269 65.0538L5.126e-06 32.5269Z" />
+        </svg>
+        <svg class="slider__button-right" width="35" height="66" viewBox="0 0 35 66" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.52686 0L0.112642 1.41421L32.6396 33.9411L34.0538 32.5269L1.52686 0Z" />
+          <path d="M34.0538 32.5269L32.6396 31.1127L0.112642 63.6396L1.52686 65.0538L34.0538 32.5269Z" />
+        </svg>
+
       </div>
     </section>
     <section class="section faq" id="faq">
       <div class="container">
         <h2 class="subtitle faq__subtitle">Частые вопросы</h2>
-       <!-- <ul class="faq__list">
-          <li class="faq__item">
-            <p class="faq__item-text">Можно ли забронировать комнату онлайн?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
-              <circle class="faq__circle faq__circle_purple" cx="23" cy="23" r="22" stroke-width="2" />
-              <path class="faq__vertical faq__vertical_purple" d="M22.8305 14H23.5085V34H22.8305V14Z" />
-              <path class="faq__minus faq__minus_purple" d="M13 24.1695V23.4915H33V24.1695H13Z" />
-            </svg>
-          </li>
-          <li class="faq__item">
-            <p class="faq__item-text">Могут ли мне вернуть деньги за бронь?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
-              <circle class="faq__circle faq__circle_white" cx="23.0001" cy="23" r="22" stroke-width="2" />
-              <path class="faq__vertical faq__vertical_white" d="M22.8306 14H23.5086V34H22.8306V14Z" />
-              <path class="faq__minus faq__minus_white" d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" />
-            </svg>
-          </li>
-          <li class="faq__item">
-            <p class="faq__item-text">Какая комната самая популярная?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
-              <circle class="faq__circle faq__circle_purple" cx="23" cy="23" r="22" stroke-width="2" />
-              <path class="faq__vertical faq__vertical_purple" d="M22.8305 14H23.5085V34H22.8305V14Z" />
-              <path class="faq__minus faq__minus_purple" d="M13 24.1695V23.4915H33V24.1695H13Z" />
-            </svg>
-          </li>
-          <li class="faq__item">
-            <p class="faq__item-text">Как получить VIP-карту?</p>
-            <svg class="faq__item-pic" width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
-              <circle class="faq__circle faq__circle_white" cx="23.0001" cy="23" r="22" stroke-width="2" />
-              <path class="faq__vertical faq__vertical_white" d="M22.8306 14H23.5086V34H22.8306V14Z" />
-              <path class="faq__minus faq__minus_white" d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" />
-            </svg>
-          </li>
-        </ul> -->
         <ul class="faq__list">
           <li class="faq__item">
-            <h3 class="faq__item-button"><span class ="faq__item-text">Можно ли забронировать комнату онлайн?</span></h3>
-            <p class="faq__item-answer">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
+            <h3 class="faq__item-button"><span class="faq__item-text">Можно ли забронировать комнату онлайн?</span></h3>
+            <p class="faq__item-answer">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также
+              вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
           </li>
           <li class="faq__item">
-            <h3 class="faq__item-button"><span class ="faq__item-text">Могут ли мне вернуть деньги за бронь?</span></h3>
+            <h3 class="faq__item-button"><span class="faq__item-text">Могут ли мне вернуть деньги за бронь?</span></h3>
             <p class="faq__item-answer">Ответ на вопрос</p>
           </li>
           <li class="faq__item">
-            <h3 class="faq__item-button"><span class ="faq__item-text">Какая комната самая популярная?</span></h3>
+            <h3 class="faq__item-button"><span class="faq__item-text">Какая комната самая популярная?</span></h3>
             <p class="faq__item-answer">Ответ на вопрос</p>
           </li>
           <li class="faq__item">
-            <h3 class="faq__item-button"><span class ="faq__item-text">Как получить VIP-карту?</span></h3>
+            <h3 class="faq__item-button"><span class="faq__item-text">Как получить VIP-карту?</span></h3>
             <p class="faq__item-answer">Ответ на вопрос</p>
           </li>
         </ul>
@@ -431,7 +413,7 @@
         <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)" />
       </svg>
       <h2 class="modal-form__caption">Заказать звонок</h2>
-      <form class="modal-form__window">
+      <form class="modal-form__window" action="https://jsonplaceholder.typicode.com/posts" method="POST">
         <label class="modal-form__data-label modal-form__data-label_block" for="name-modal">Имя
           <input class="modal-form__data modal-form__data_block" type="text" id="name-modal" name="name-modal" required>
         </label>
@@ -443,21 +425,21 @@
       </form>
     </div>
   </div>
-<div class="burger-menu" hidden>
-  <div class="burger-menu__wrapper">
-    <nav class="burger-menu__burger">
+  <div class="burger-menu" hidden>
+    <div class="burger-menu__wrapper">
+      <nav class="burger-menu__burger">
         <ul class="burger-menu__burger-list">
           <li class="burger-menu__item"><a class="burger-menu__link-text" href="#halls">Залы</a></li>
           <li class="burger-menu__item"><a class="burger-menu__link-text" href="#about-us">О нас</a></li>
           <li class="burger-menu__item"><a class="burger-menu__link-text" href="#reservation">Бронь</a></li>
           <li class="burger-menu__item"><a class="burger-menu__link-text" href="#review">Отзывы</a></li>
-          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#contacts">Контакты</a></li>          
+          <li class="burger-menu__item"><a class="burger-menu__link-text" href="#contacts">Контакты</a></li>
         </ul>
         <button class="burger-menu__button" type="button">Заказать звонок</button>
-    </nav>
+      </nav>
 
+    </div>
   </div>
-</div>
 </body>
 
 </html>
