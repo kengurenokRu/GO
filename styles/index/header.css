@@ -12,10 +12,10 @@
 }
 
 .header__logo-border {
-    fill: var(--pink-color, #cd06ff);    
+    fill: var(--pink-color, #cd06ff);
 }
 
-.header__link-text{
+.header__link-text {
     font-size: 22px;
     line-height: 50px;
 }
@@ -58,14 +58,42 @@
     border: 1px solid var(--white-color, #fff);
 }
 
-.header__burger{
-    display: none;    
+.header__burger {
+    display: none;
+    transition-duration: 0.2s;
+    transition-property: fill, stroke, border, transform;
+    cursor: pointer;
 }
 
-.header__burger-border{
-    fill: var(--pink-color, #cd06ff);
+.header__burger-border {
+    fill: var(--purple, #6c0287);
     transition: transform 0.2s;
 }
+
+.header__burger:hover .header__burger-border {
+    fill: var(--pink-color, #cd06ff);
+}
+
+.header__burger:focus .header__burger-border {
+    fill: var(--focus-hover-button, #840aa3);
+}
+
+.header__burger:focus {
+    outline: 3px solid var(--focus-hover-button, #840aa3);
+}
+
+.header__burger:active .header__burger-border {
+    fill: var(--focus-hover-button, #840aa3);
+}
+
+.header__burger:active {
+    outline: 3px solid var(--focus-hover-button, #840aa3);
+}
+
+/*
+.header__burger:active {
+    outline: none;
+}*/
 
 @media (max-width: 1250px) {
     .header__logo {
@@ -76,19 +104,21 @@
         padding: 10px 26px;
         font-size: 18px;
         max-width: 230px;
-        max-height: 45px;        
+        max-height: 45px;
     }
-    .header__link-text{
+
+    .header__link-text {
         font-size: 18px;
         line-height: 22px;
     }
 }
 
 @media (max-width: 950px) {
-    .header__menu{
+    .header__menu {
         display: none;
     }
-    .header__burger{
+
+    .header__burger {
         display: block;
     }
 }
@@ -98,7 +128,7 @@
         width: 66px;
     }
 
-    .header__button{
+    .header__button {
         display: none;
     }
 }
