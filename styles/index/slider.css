@@ -1,5 +1,5 @@
 .swiper {
-    width: 80%;
+    width: 85%;
 }
 
 .slider__container {
@@ -11,7 +11,7 @@
     position: absolute;
     width: 46px;
     height: 46px;
-    top: calc(50% - 23px);
+    top: calc(50%);
     z-index: 10;
     cursor: pointer;
     display: flex;
@@ -23,12 +23,12 @@
 }
 
 .slider__button-right:hover,
-.slider__button-left:hover{
+.slider__button-left:hover {
     fill: var(--pink-color, #cd06ff);
 }
 
 .slider__button-right:focus,
-.slider__button-left:focus{
+.slider__button-left:focus {
     fill: var(--focus-hover-button, #840aa3);
     outline: 3px solid var(--focus-hover-button, #840aa3);
 }
@@ -42,6 +42,9 @@
     left: 130px;
 }
 
+.slider__text {
+    line-height: 28px;
+}
 
 .slider__foto {
     width: 280px;
@@ -96,6 +99,25 @@
 }
 
 @media (max-width: 1250px) {
+
+    .slider__button-right {
+        right: 60px;
+    }
+
+    .slider__button-left {
+        left: 60px;
+    }
+
+.slider__button-right,
+.slider__button-left{
+    width: 36px;
+    height: 36px;
+}
+
+    .slider__text {
+        line-height: 26px;
+    }
+
     .slider__foto {
         width: 172px;
         height: 172px;
@@ -122,6 +144,18 @@
 }
 
 @media (max-width: 860px) {
+    .slider__button-right {
+        right: 40px;
+    }
+
+    .slider__button-left {
+        left: 40px;
+    }    
+
+    .slider__text {
+        line-height: 22px;
+    }
+
     .slider__foto {
         width: 153px;
         height: 153px;
@@ -145,6 +179,45 @@
 }
 
 @media (max-width: 680px) {
+    .swiper {
+        width: 100%;
+    }
+
+    .slider__people {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+    }
+
+    .slider__button-right,
+    .slider__button-left {
+        top: calc(50% - 80px);
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .slider__swiper-slide {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+
+    .slider__button-right {
+        right: 50px;
+    }
+
+    .slider__button-left {
+        left: 50px;
+    }
+
+    .slider__text {
+        line-height: 28px;
+    }
+
 
     .slider__foto {
         width: 86px;
