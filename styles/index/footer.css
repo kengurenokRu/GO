@@ -169,7 +169,12 @@
 @media (max-width: 680px) {
 
     .footer__block-container {
-        grid-template-columns:  minmax(280px, 600px);
+        grid-template-columns: minmax(280px, 600px);
+    }
+
+    .footer__social-link {
+        height: 30px;
+        width: 30px;
     }
 
     .footer__social {
@@ -177,7 +182,7 @@
         height: 30px;
     }
 
-    .footer__map {        
+    .footer__map {
         min-height: 194px;
     }
 
